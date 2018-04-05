@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/bin/node /Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/bin/yarn jasmine
+  /Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/bin/node /Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/bin/yarn add moment
 
 PATH: 
   ... :/usr/local/sbin:/Users/chaiyaphongboonkhlerm/Library/Android/sdk/platform-tools:/Users/chaiyaphongboonkhlerm/Library/Android/sdk/tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/bin:... :/usr/local/sbin:/Users/chaiyaphongboonkhlerm/Library/Android/sdk/platform-tools:/Users/chaiyaphongboonkhlerm/Library/Android/sdk/tools
@@ -31,7 +31,7 @@ npm manifest:
     },
     "scripts": {
       "start": "nodemon ./src/app.js",
-      "test": "nodemon jasmine"
+      "test": "nodemon ./node_modules/.bin/jasmine"
     },
     "devDependencies": {
       "nodemon": "^1.17.3"
@@ -3249,17 +3249,9 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: sh
-  Arguments: -c /Users/chaiyaphongboonkhlerm/workspace/trainning/nodejs-todolist/node_modules/.bin/jasmine
-  Directory: /Users/chaiyaphongboonkhlerm/workspace/trainning/nodejs-todolist
-  Output:
-  
-      at ProcessTermError.MessageError (/Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/lib/node_modules/yarn/lib/cli.js:186:110)
-      at new ProcessTermError (/Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/lib/node_modules/yarn/lib/cli.js:226:113)
-      at ChildProcess.<anonymous> (/Users/chaiyaphongboonkhlerm/.nvm/versions/node/v8.9.2/lib/node_modules/yarn/lib/cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: unable to verify the first certificate
+      at TLSSocket.<anonymous> (_tls_wrap.js:1103:38)
+      at emitNone (events.js:106:13)
+      at TLSSocket.emit (events.js:208:7)
+      at TLSSocket._finishInit (_tls_wrap.js:637:8)
+      at TLSWrap.ssl.onhandshakedone (_tls_wrap.js:467:38)
