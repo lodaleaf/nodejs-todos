@@ -21,8 +21,8 @@ module.exports = (sequelize, DataTypes) => {
         updatedBy: {
             type: DataTypes.STRING
         }
-
-
+    },{
+        tableName: 'todo'
     })
     return Todo
 }
