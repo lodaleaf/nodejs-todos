@@ -13,9 +13,16 @@ services:
       - 3306:3306
     volumes: 
       - ./datadir:/var/lib/mysql
+     healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      timeout: 20s
+      retries: 10
 
   adminer:
     image: adminer
     restart: always
     ports:
       - 8080:8080
+    depends_on:
+      db:
+        condition: service_healthy
